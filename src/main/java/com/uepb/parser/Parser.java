@@ -60,11 +60,11 @@ public class Parser {
                 match(lookahead().type); // Consume INT, FLOAT, or ID token
             } else if (lookahead().type.equals("LPAREN")) { 
                 match("LPAREN");
-                expr(); // Parenteses para expressões
+                expr(); 
                 match("RPAREN");
-            } else if (lookahead().type.equals("EXPONENTIAL")) { // Atualizar para o token EXPONENTIAL
+            } else if (lookahead().type.equals("EXPONENTIAL")) { 
                 match("EXPONENTIAL");
-                factor(); // Consome o próximo fator
+                factor();
             } else {
                 throw new RuntimeException("Erro sintático: esperado INT, FLOAT, ID ou LPAREN, mas encontrado " + lookahead().type);
             }

@@ -36,7 +36,7 @@ public class Main {
             Parser parser = new Parser(tokens);
             try {
                 parser.program();  // Inicia a análise sintática pelo ponto de entrada 'program'
-                System.out.println("Análise sintática concluída com sucesso.");
+                System.out.println("Análise léxica concluída com sucesso.");
             } catch (Exception e) {
                 System.err.println("Erro durante a análise sintática: " + e.getMessage());
             }

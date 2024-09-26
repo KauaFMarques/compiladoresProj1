@@ -19,7 +19,6 @@ public class Lexer {
         tokenPatterns.put("MINUS", "\\-");
         tokenPatterns.put("MULTIPLY", "\\*");
         tokenPatterns.put("DIVIDE", "/");
-        // Alterar de \\*\\* para \\^
         tokenPatterns.put("EXPONENTIAL", "\\^");
         tokenPatterns.put("EQUAL", "=");
         tokenPatterns.put("DOUBLE_EQUAL", "==");
@@ -29,7 +28,7 @@ public class Lexer {
         tokenPatterns.put("FLOAT", "[0-9]+\\.[0-9]+");
         tokenPatterns.put("INT", "[0-9]+");
         tokenPatterns.put("ID", "[a-zA-Z_][a-zA-Z_0-9]*");
-        tokenPatterns.put("WS", "[ \\t\\r\\n]+"); // Ignorar espaços e quebras de linha
+        tokenPatterns.put("WS", "[ \\t\\r\\n]+");
     }
     
 
